@@ -3,89 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Webpage Title</title>
+    <title>Zhong Yan Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Zhong Yan</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#girlfriend">My Girlfriend</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Zhong Yan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#girlfriend">My Girlfriend</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <section id="home">
-            <h2>Hello world! 👋</h2>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Home Section -->
+        <section id="home" class="text-center py-5">
+            <h2 class="display-4">Hello World! 👋</h2>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <img src='./zhongyan.jpg' alt='Zhong Yan' width="25%">
-            <p>Hi, I am Zhong Yan, a Y2 SCIS student majoring in DCS + BA and AI.</p>
-            <P>Here are some interesting things about me:</P>
-            <ul>
-                <li>I am currently pursuing Google's Machine Learning Engineer certification.</li>
-                <li>My primary way of learning is through online courses such as Udemy and Coursera.</li>
-                <li>I love Michael Scott and Tom Hanks.</li>
-            </ul>
-            <p>You can find my work easily on <a href='https://www.linkedin.com/in/zhong-yan-tan/' target="_blank">Linkedin</a>. I shamelessly post my progress along the way with no engagement whatsoever.</p>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projectdiv">
-                <h3>Coursera Google Advanced Data Analytics Course</h3>
-                <img src='./internship.jpg' alt='internship' width="50%">
-                <p>During my y1 summer break, I did an internship with KPMG SG as a data analytics intern.<br>
-                    I mainly did documentation and development of PowerBI dashboards.<br><br>
-                    Whenever I had free time, I would complete onlines courses, and this was one of the ones that took me the longest. <br>
-                    Here is my <a href='https://github.com/tanzhongyan/Coursera-Advanced-Data-Analytics' target="_blank">GitHub Repo</a>.</p>
+        <!-- About Section -->
+        <section id="about" class="py-5">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="./zhongyan.jpg" class="img-fluid rounded-circle" alt="Zhong Yan" />
+                </div>
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+                    <p>Hi, I am Zhong Yan, a Y2 SCIS student majoring in DCS + BA and AI.</p>
+                    <ul>
+                        <li>I am currently pursuing Google's Machine Learning Engineer certification.</li>
+                        <li>My primary way of learning is through online courses such as Udemy and Coursera.</li>
+                        <li>I love Michael Scott and Tom Hanks.</li>
+                    </ul>
+                    <p>
+                        You can find my work on 
+                        <a href="https://www.linkedin.com/in/zhong-yan-tan/" target="_blank">LinkedIn</a>. I shamelessly post my progress with no engagement whatsoever.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="girlfriend">
-            <h2>My Girlfriend</h2>
-            <div class="gfdiv">
-                <h3>Summer Thailand Trip</h3>
-                <img src='./ferriswheel.jpg' alt='ferriswheel' width="50%">
-                <p>Before my internship started, I went to Thailand with my girlfriend for 8 days. <br>
-                    It was my first time being in Thailand, and I have to say it was a eye opening experience.<br>
-                    Takeaways:
-                    <ol>
-                        <li>People are so friendly and patient.</li>
+        <!-- Projects Section -->
+        <section id="projects" class="py-5">
+            <h2 class="text-center">My Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Coursera Google Advanced Data Analytics Course</h3>
+                    <img src="./internship.jpg" class="img-fluid mb-3" alt="internship" />
+                    <p>
+                        During my Y1 summer break, I interned at KPMG SG as a data analytics intern, focusing on documentation and PowerBI dashboard development.
+                        <br>
+                        Whenever I had free time, I completed online courses, including this one. 
+                        <br>Here's my <a href="https://github.com/tanzhongyan/Coursera-Advanced-Data-Analytics" target="_blank">GitHub Repo</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Girlfriend Section -->
+        <section id="girlfriend" class="py-5">
+            <h2 class="text-center">My Girlfriend</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Summer Thailand Trip</h3>
+                    <img src="./ferriswheel.jpg" class="img-fluid mb-3" alt="ferriswheel" />
+                    <p>
+                        Before my internship, I visited Thailand with my girlfriend. It was an eye-opening experience with many takeaways:
+                    </p>
+                    <ul>
+                        <li>People are incredibly friendly and patient.</li>
                         <li>Life moves at a slower pace.</li>
-                        <li>Things are not cheap there.</li>
-                        <li>I sweat more in Singapore even though its hotter there???</li>
-                    </ol>
-                    Here's another image of me with dogs. I was chubby then, but I'm still chubby now.
-                    <img src='./dogcafe.jpg' alt='dogcafe' width="50%">
-                </p>
-            </div>
-            <div class="gfdiv">
-                <h3>Clickbaiting People</h3>
-                <img src='./notmyson.jpg' alt='notmyson' width="50%">
-                <p>I like to clickbait people with my nephew because people think that we look alike. <br>
-                    I am quite fond of children as they are so cute and do the darnest things ever. <br>
-                    Honestly the only thing that is stopping me now is money, so if you're watching this please give me opportunities. <br>        
-                </p>
+                        <li>Things are not as cheap as expected.</li>
+                        <li>Surprisingly, I sweat more in Singapore than in Thailand!</li>
+                    </ul>
+                    <img src="./dogcafe.jpg" class="img-fluid mb-3" alt="dogcafe" />
+                </div>
+                <div class="col-md-6">
+                    <h3>Clickbaiting People</h3>
+                    <img src="./notmyson.jpg" class="img-fluid mb-3" alt="notmyson" />
+                    <p>
+                        I love clickbaiting people with my nephew since we look alike. I find children adorable and they never fail to amuse. The only thing stopping me from having my own is money!
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
+        <!-- Contact Section -->
+        <section id="contact" class="text-center py-5">
             <h2>Contact Me</h2>
-            <p>Please connect with me on <a href='https://www.linkedin.com/in/zhong-yan-tan/' target="_blank">Linkedin</a> or approach me. I am friendly and I promise I wont bite.</p>
+            <p>
+                Please connect with me on 
+                <a href="https://www.linkedin.com/in/zhong-yan-tan/" target="_blank">LinkedIn</a>. I am approachable and promise I won’t bite!
+            </p>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
         <p>&copy; 2024 Zhong Yan. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
